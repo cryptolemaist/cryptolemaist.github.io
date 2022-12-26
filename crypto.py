@@ -83,8 +83,6 @@ output_text0 = Element("output_text0")
 
 def sendkeyinout(*args):
     output_text0.element.innerText = half_to_send(int(input_text0.value))
-    if output_text0.element.innerText.replace(" ","")=="":
-        output_text0.element.innerText="보낼 key"
     input_text0.clear()
     
 input_text1 = Element("input_text1")
@@ -93,6 +91,27 @@ input_text2 = Element("input_text2")
 
 def keyinout(*args):
     output_text1.element.innerText = half_to_one(int(input_text1.value),int(input_text2.value))
-    if output_text1.element.innerText.replace(" ","")=="":
-        output_text1.element.innerText="key"
-    input_text0.clear()
+    input_text1.clear()
+    input_text2.clear()
+
+input_text3 = Element("input_text3")
+output_text2 = Element("output_text2")
+input_text4 = Element("input_text4")
+
+def eninout(*args):
+    output_text2.element.innerText = encode_d(int(input_text3.value),int(input_text4.value))
+    if output_text2.element.innerText.replace(" ","")=="":
+        output_text2.element.innerText="..."
+    input_text3.clear()
+    input_text4.clear()
+    
+input_text5 = Element("input_text5")
+output_text3 = Element("output_text3")
+input_text6 = Element("input_text6")
+
+def eninout(*args):
+    output_text3.element.innerText = encode_d(int(input_text5.value),int(input_text6.value))
+    if output_text3.element.innerText.replace(" ","")=="":
+        output_text3.element.innerText="..."
+    input_text5.clear()
+    input_text6.clear()
