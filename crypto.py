@@ -77,3 +77,12 @@ def decode_d(t,k):
     for j in t:
         outp.append(chr(int(j)))
     return "".join(outp)
+
+input_text0 = Element("input_text0")
+output_text0 = Element("output_text0")
+
+def wkinandout(*args):
+    output_text0.element.innerText = half_to_send(input_text0.value)
+    if output_text0.element.innerText.replace(" ","")=="":
+        output_text0.element.innerText="..."
+    input_text0.clear()
