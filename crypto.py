@@ -82,7 +82,7 @@ input_text0 = Element("input_text0")
 output_text0 = Element("output_text0")
 
 def sendkeyinout(*args):
-    output_text0.element.innerText = half_to_send(int((input_text0.value)))
+    output_text0.element.innerText = half_to_send(int(input_text0.value))
     if output_text0.element.innerText.replace(" ","")=="":
         output_text0.element.innerText="보낼 key"
     input_text0.clear()
