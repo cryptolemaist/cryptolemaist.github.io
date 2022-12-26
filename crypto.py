@@ -91,5 +91,8 @@ input_text1 = Element("input_text1")
 output_text1 = Element("output_text1")
 input_text2 = Element("input_text2")
 
-def sendkeyinout(*args):
-    pass
+def keyinout(*args):
+    output_text1.element.innerText = half_to_one(int(input_text1.value),int(input_text2.value))
+    if output_text1.element.innerText.replace(" ","")=="":
+        output_text1.element.innerText="key"
+    input_text0.clear()
