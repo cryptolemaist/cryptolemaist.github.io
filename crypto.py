@@ -109,8 +109,8 @@ input_text5 = Element("input_text5")
 output_text3 = Element("output_text3")
 input_text6 = Element("input_text6")
 
-def eninout(*args):
-    output_text3.element.innerText = encode_d(int(input_text5.value),int(input_text6.value))
+def deinout(*args):
+    output_text3.element.innerText = decode_d(int(input_text5.value),int(input_text6.value))
     if output_text3.element.innerText.replace(" ","")=="":
         output_text3.element.innerText="..."
     input_text5.clear()
