@@ -81,7 +81,7 @@ def decode_d(t,k):
 input_text0 = Element("input_text0")
 output_text0 = Element("output_text0")
 
-def wkinandout(*args):
+def sendkeyinout(*args):
     output_text0.element.innerText = half_to_send(input_text0.value)
     if output_text0.element.innerText.replace(" ","")=="":
         output_text0.element.innerText="..."
