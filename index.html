@@ -10,26 +10,19 @@
     <h1>Image Processing Tool</h1>
 
     <form id="imageForm">
-        <label for="pieceWidth">Piece's Width:</label>
-        <input type="number" id="pieceWidth" required>
-
-        <label for="pieceHeight">Piece's Height:</label>
-        <input type="number" id="pieceHeight" required>
-
-        <label for="cutBy">Cut by:</label>
+        Piece's Width: <input type="number" id="pieceWidth" required><br>
+        Piece's Height: <input type="number" id="pieceHeight" required><br>
+        Cut by: 
         <select id="cutBy" required>
             <option value="width">Width</option>
             <option value="height">Height</option>
-        </select>
-
-        <label for="numPieces">Cut to (number) pieces:</label>
-        <input type="number" id="numPieces" required>
-
-        <label for="imgFile">Select Image:</label>
-        <input type="file" id="imgFile" accept="image/*" required>
-
+        </select><br>
+        Cut to (number) pieces: <input type="number" id="numPieces" required><br>
+        Select Image: <input type="file" id="imgFile" accept="image/*" required><br>
         <button type="button" onclick="processImage()">Process Image</button>
     </form>
+
+    <br>
 
     <a id="downloadLink" style="display: none;">Download Files</a>
 
@@ -50,4 +43,3 @@
 
 </body>
 </html>
-
