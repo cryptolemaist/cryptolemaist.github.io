@@ -10,15 +10,18 @@
     <h1>Image Processing Tool</h1>
 
     <form id="imageForm">
-        Piece's Width: <input type="number" id="pieceWidth" required><br>
-        Piece's Height: <input type="number" id="pieceHeight" required><br>
-        Cut by: 
+        Cut 
         <select id="cutBy" required>
             <option value="width">Width</option>
             <option value="height">Height</option>
-        </select><br>
-        Cut to (number) pieces: <input type="number" id="numPieces" required><br>
+        </select>
+        to <input type="number" id="numPieces" required> pieces<br>
+
+        Piece's Width: <input type="number" id="pieceWidth" required><br>
+        Piece's Height: <input type="number" id="pieceHeight" required><br>
+
         Select Image: <input type="file" id="imgFile" accept="image/*" required><br>
+
         <button type="button" onclick="processImage()">Process Image</button>
     </form>
 
