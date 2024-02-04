@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing Tool</title>
+</head>
+<body>
+
+    <h1>Image Processing Tool</h1>
+
+    <form id="imageForm">
+        <label for="pieceWidth">Piece's Width:</label>
+        <input type="number" id="pieceWidth" required>
+
+        <label for="pieceHeight">Piece's Height:</label>
+        <input type="number" id="pieceHeight" required>
+
+        <label for="cutBy">Cut by:</label>
+        <select id="cutBy" required>
+            <option value="width">Width</option>
+            <option value="height">Height</option>
+        </select>
+
+        <label for="numPieces">Cut to (number) pieces:</label>
+        <input type="number" id="numPieces" required>
+
+        <label for="imgFile">Select Image:</label>
+        <input type="file" id="imgFile" accept="image/*" required>
+
+        <button type="button" onclick="processImage()">Process Image</button>
+    </form>
+
+    <a id="downloadLink" style="display: none;">Download Files</a>
+
+    <script>
+        function processImage() {
+            // Implement image processing logic here
+            // Create a folder and save processed files
+
+            // Display the download link
+            document.getElementById('downloadLink').style.display = 'block';
+        }
+
+        document.getElementById('downloadLink').addEventListener('click', function () {
+            // Implement download logic here
+            // Provide a link to download the processed files
+        });
+    </script>
+
+</body>
+</html>
 
