@@ -42,25 +42,22 @@
 
         Select Image: <input type="file" id="imgFile" accept="image/*" required><br><br>
 
-        <button type="button" onclick="processImage()">Process Image</button>
+        <button type="button" pys-onclick="processImage()">Process Image</button>
     </form>
 
 
     <a id="downloadLink" style="display: none;">Download Files</a>
 
     <py-script>
-        function processImage() {
-            // Implement image processing logic here
-            // Create a folder and save processed files
-
-            // Display the download link
-            document.getElementById('downloadLink').style.display = 'block';
-        }
-
-        document.getElementById('downloadLink').addEventListener('click', function () {
-            // Implement download logic here
-            // Provide a link to download the processed files
-        });
+        from  js import document
+        def processImage():
+            // Get input values
+            pieceWidth = document.getElementById('pieceWidth').value
+            pieceHeight = document.getElementById('pieceHeight').value
+            cutBy = document.getElementById('cutBy').value
+            numPieces = document.getElementById('numPieces').value
+            imgFile = document.getElementById('imgFile').files[0]            
+        
     <py-script>
 
 </body>
